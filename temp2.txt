@@ -1,3 +1,7 @@
 Host detected.
 Socket created.
-Client is using TCP reno.
+Client is using TCP cubic.
+Connection successful.
+# 1620314045 616338
+File data sent successfully.
+Closing the connection.

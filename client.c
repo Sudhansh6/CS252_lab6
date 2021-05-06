@@ -8,7 +8,6 @@
 #include <string.h>
 #include <time.h>
 
-#define SERVER_PORT 9000
 #define SIZE 512 // each char takes 4 bytes, we need 5000000 bytes -> 1250000 chars
 // The code from the reference links mentioned in the document is used as a template.
 // This sends the textfile
@@ -25,7 +24,7 @@ void send_file(FILE *fp, int s){
     }
     bzero(data, SIZE);
   }
-  printf("# %ld %ld.\n", start.tv_sec, start.tv_usec);
+  printf("# %ld %ld\n", start.tv_sec, start.tv_usec);
 } 
 
 int main(int argc, char * argv[])
@@ -35,15 +34,18 @@ int main(int argc, char * argv[])
   struct hostent *hp;
   struct sockaddr_in sin;
   char *host, *TCP_variant;
+  int SERVER_PORT;
   int s;
   int len;
 
-  if (argc==3) {
+  if (argc==4) {
     host = argv[1];
     TCP_variant = argv[2];
+    SERVER_PORT = atoi(argv[3]);
   }
+
   else {
-    fprintf(stderr, "usage: simplex-talk host TCP_variant\n");
+    fprintf(stderr, "usage: simplex-talk host TCP_variant PORT\n");
     exit(1);
   }
 

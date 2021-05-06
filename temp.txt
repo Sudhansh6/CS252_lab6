@@ -1,2 +1,6 @@
 Socket created.
-Server is using TCP reno.
+Server is using TCP cubic.
+Socket bind success.
+Listening....
+# 1620314045 626570
+Data written in the file successfully.
