@@ -8,9 +8,7 @@
 #include <stdlib.h>
 
 #define SERVER_PORT  9000
-#define MAX_PENDING  5
-#define MAX_LINE     256
-#define SIZE         1024
+#define SIZE         512
 // The code from the reference links mentioned in the document is used as a template.
 // This receives the textfile
 // Usage: ./server reno
@@ -31,15 +29,17 @@ void write_file(int s)
     fprintf(fp, "%s", buffer);
     bzero(buffer, SIZE);
   }
+  struct timeval start;
+  gettimeofday(&start, NULL);
+  printf("%ld, %ld.\n", start.tv_sec, start.tv_usec);
   return;
 }
 
 int main(int argc, char * argv[])
 {
   struct sockaddr_in sin; 
-  char buf[MAX_LINE];
   char *TCP_variant;
-  int buf_len, addr_len;
+  int addr_len;
   int s, new_s, len;
   struct sockaddr_in server_addr, new_addr;
 

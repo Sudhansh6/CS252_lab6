@@ -6,16 +6,18 @@
 #include <netdb.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 #define SERVER_PORT 9000
-#define SIZE 1024
+#define SIZE 512 // each char takes 4 bytes, we need 5000000 bytes -> 1250000 chars
 // The code from the reference links mentioned in the document is used as a template.
 // This sends the textfile
 // Usage: ./client localhost cubic or ./client 127.0.0.1 reno
 void send_file(FILE *fp, int s){
   int n;
   char data[SIZE] = {0};
-
+  struct timeval start;
+  gettimeofday(&start, NULL);
   while(fgets(data, SIZE, fp) != NULL) {
     if (send(s, data, sizeof(data), 0) == -1) {
       perror("Error in sending file.");
@@ -23,7 +25,8 @@ void send_file(FILE *fp, int s){
     }
     bzero(data, SIZE);
   }
-}
+  printf("%ld, %ld.\n", start.tv_sec, start.tv_usec);
+} 
 
 int main(int argc, char * argv[])
 {
