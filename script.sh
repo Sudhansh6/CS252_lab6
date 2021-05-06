@@ -1,8 +1,6 @@
 #!/bin/bash
 make client
 make server
-# mkdir frontend
-# mkdir backend
 
 # tc qdisc add dev lo root netem delay 0ms 
 # tc qdisc add dev lo root netem loss 0%
@@ -13,36 +11,29 @@ delays=("10000ms" "50ms" "100ms");
 losses=("0.1%" "0.5%" "1%");
 
 for delay in ${delays[*]}; do
-	tc qdisc change dev lo root netem delay "$delay" 
+	sudo tc qdisc change dev lo root netem delay "$delay";
 	for loss in ${losses[*]}; do
-		tc qdisc change dev lo root netem loss "$loss"
+		sudo tc qdisc change dev lo root netem loss "$loss";
 		echo "delay ${delay} loss ${loss}"
 		data_reno=()  
 		data_cubic=()
-		for i in {1..1}; do 
-			./server reno > temp.txt &
-			./client localhost reno > temp2.txt
+		for i in {1..20}; do 
+			port=`expr 8000 + $i`;
+			./server reno $port> temp.txt &
+			./client localhost reno $port> temp2.txt
 			
-			data_reno+=($i);
+			var1=$(awk 'NR==5 {print $NF}' temp.txt)
+			var2=$(awk 'NR==5 {print $NF}' temp2.txt)
+			data_reno+=(`expr $var1 - $var2`);
 
-			./server cubic > temp.txt &
-			./client localhost cubic > temp2.txt
-			data_cubic+=($i);
+			./server cubic $port> temp.txt &
+			./client localhost cubic $port> temp2.txt 
+
+			var3=$(awk 'NR==5 {print $NF}' temp.txt)
+			var4=$(awk 'NR==5 {print $NF}' temp2.txt)
+			data_cubic+=(`expr $var3 - $var4`);
 		done	
-		echo "TCP reno ${data_reno[*]}";
-		echo "TCP cubic ${data_cubic[*]}";
+		echo "TCP reno ${data_reno[*]}" > reno.txt;
+		echo "TCP cubic ${data_cubic[*]}" > cubic.txt;
 	done
 done
-
-# rm -rf frontend
-# rm -rf backend
-
-# delay - 10, loss - 0.1
-# tcp reno - 11 101 101 101011 1011 10 309 2309 2039 54
-# tcp cubic - 11 101 101 101011 1011 10 309 2309 2039
-# delay - 10, loss - 0.5
-# tcp reno - 11 101 101 101011 1011 10 309 2309 2039 53
-# tcp cubic - 11 101 101 101011 1011 10 309 2309 2039
-# delay - 10, loss - 1
-# tcp reno - 11 101 101 101011 1011 10 309 2309 2039 52
-# tcp cubic - 11 101 101 101011 1011 10 309 2309 2039
