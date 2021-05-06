@@ -24,6 +24,9 @@ for delay in ${delays[*]}; do
 			./client localhost reno > temp2.txt
 			
 			data_reno+=($i);
+
+			./server cubic > temp.txt &
+			./client localhost cubic > temp2.txt
 			data_cubic+=($i);
 		done	
 		echo "TCP reno ${data_reno[*]}";
