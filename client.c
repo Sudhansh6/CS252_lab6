@@ -8,7 +8,7 @@
 #include <string.h>
 #include <time.h>
 
-#define SERVER_PORT 8000
+#define SERVER_PORT 9000
 #define SIZE 512 // each char takes 4 bytes, we need 5000000 bytes -> 1250000 chars
 // The code from the reference links mentioned in the document is used as a template.
 // This sends the textfile
@@ -75,13 +75,13 @@ int main(int argc, char * argv[])
   if (setsockopt(s, IPPROTO_TCP, TCP_CONGESTION, TCP_variant, len) != 0)
   {
       perror("setsockopt");
-      return -1;
+      exit(1);
   }
   len = sizeof(TCP_variant);
   if (getsockopt(s, IPPROTO_TCP, TCP_CONGESTION, TCP_variant, &len) != 0)
   {
       perror("getsockopt");
-      return -1;
+      exit(1);
   }
   printf("Client is using TCP %s.\n", TCP_variant);
 
