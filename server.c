@@ -7,7 +7,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define SERVER_PORT  9000
+#define SERVER_PORT  8000
 #define SIZE         512
 // The code from the reference links mentioned in the document is used as a template.
 // This receives the textfile
@@ -31,7 +31,7 @@ void write_file(int s)
   }
   struct timeval start;
   gettimeofday(&start, NULL);
-  printf("%ld, %ld.\n", start.tv_sec, start.tv_usec);
+  printf("# %ld %ld.\n", start.tv_sec, start.tv_usec);
   return;
 }
 

@@ -8,7 +8,7 @@
 #include <string.h>
 #include <time.h>
 
-#define SERVER_PORT 9000
+#define SERVER_PORT 8000
 #define SIZE 512 // each char takes 4 bytes, we need 5000000 bytes -> 1250000 chars
 // The code from the reference links mentioned in the document is used as a template.
 // This sends the textfile
@@ -25,7 +25,7 @@ void send_file(FILE *fp, int s){
     }
     bzero(data, SIZE);
   }
-  printf("%ld, %ld.\n", start.tv_sec, start.tv_usec);
+  printf("# %ld %ld.\n", start.tv_sec, start.tv_usec);
 } 
 
 int main(int argc, char * argv[])
