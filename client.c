@@ -10,7 +10,7 @@
 #include <unistd.h>
 #include <time.h>
 
-#define SIZE 8192 // each char takes 4 bytes, we need 5000000 bytes -> 1250000 chars
+#define SIZE 8192
 // The code from the reference links mentioned in the document is used as a template.
 // This sends the textfile
 // Usage: ./client localhost cubic or ./client 127.0.0.1 reno
@@ -117,8 +117,8 @@ int main(int argc, char * argv[])
   printf("File data sent successfully.\n");
 
   printf("Closing the connection.\n");
-  close(s);
 
+  close(s);
   return 0;
 
 }

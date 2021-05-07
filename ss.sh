@@ -22,7 +22,7 @@ function find_port() {
 		fi
 	done
 }
-> tmp.txt
+
 for i in {0..2}; do
 	for j in {0..2}; do
 		echo "delay ${delays[i]} loss ${losses[j]}" >> results.txt;
@@ -32,37 +32,34 @@ for i in {0..2}; do
 		data_cubic=()
 		for k in {0..19}; do
 			> recv.txt;
-			while ! cmp -s send.txt recv.txt; do
+			# while ! cmp -s send.txt recv.txt; do
 				find_port;
 				port1=$port;
-				./server reno ${port1} > temp.txt &
-				./client localhost reno ${port1} > temp2.txt ;
-				wait
-				cat temp.txt temp2.txt >> tmp.txt;
-				echo $'\n' >> tmp.txt;
-			done
+				./server $1 ${port1} > temp2.txt &
+				./client localhost $1 ${port1} > temp.txt ;
+				# wait
+			# done
 
-			var=`awk '/#/ { printf ( "%.6f\n", ($6*8)/ ( ($4 - $2) + ($5 - $3)*0.000001 ) ); }' temp2.txt`;
+			var=`awk '/#/ { printf ( "%.6f\n", ($6*8)/ ( ($4 - $2) + ($5 - $3)*0.000001 ) ); }' temp.txt`;
 			echo $var;
 			data_reno+="$var ";
 
-			rm temp.txt;
-			rm temp2.txt;
+			rm temp.txt; rm temp2.txt;
 
 			> recv.txt;
-			while ! cmp -s send.txt recv.txt; do
+			# while ! cmp -s send.txt recv.txt; do
 				find_port;
 				port2=$port;
-				./server cubic ${port2} > temp.txt &
-				./client localhost cubic ${port2} > temp2.txt;
-				wait
-			done
+				./server $2 ${port2} > temp2.txt &
+				./client localhost $2 ${port2} > temp.txt;
+				# wait
+			# done
 
-			var=`awk '/#/ { printf ( "%.6f\n", ($6*8)/ ( ($4 - $2) + ($5 - $3)*0.000001 ) ); }' temp2.txt`;
+			var=`awk '/#/ { printf ( "%.6f\n", ($6*8)/ ( ($4 - $2) + ($5 - $3)*0.000001 ) ); }' temp.txt`;
+			echo $var;
 			data_cubic+="$var ";
 
-			rm temp.txt;
-			rm temp2.txt;
+			rm temp.txt; rm temp2.txt;
 		done	
 		echo "${data_reno[*]}" >> results.txt;
 		echo "${data_cubic[*]}" >> results.txt;
