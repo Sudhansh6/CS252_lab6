@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plt
+from matplotlib import pyplot as plt
 import numpy as np
  
 reno=[]
@@ -14,21 +14,12 @@ with open('results.txt','r') as f:
             reno=[]
             cubic=[]
         elif(counter%3 == 1):
-            if (line[-1] == '\n'):
-                reno = line[9:-1].split(" ")
-                reno = [float(i) for i in reno]
-            else:
-                reno = line[9:].split(" ")
-                reno = [float(i) for i in reno]
+        	reno = line[0:-2].split(" ")
+        	reno = [float(i) for i in reno] # gives throughput in GBps
         elif(counter%3 == 2):
-            if (line[-1] == '\n'):
-                cubic = line[10:-1].split(" ")
-                cubic = [float(i) for i in cubic]
-            else:
-                cubic = line[10:].split(" ")
-                cubic = [float(i) for i in cubic]
-        if(line[0]!='m'):
-            counter = counter + 1
+        	cubic = line[0:-2].split(" ")
+        	cubic = [float(i) for i in cubic] # gives throughput in GBps
+        counter+=1
         if(counter%3 == 0 and counter>0):
             renotp_mean.append(np.mean(reno))
             renotp_std.append(np.std(reno))
@@ -49,30 +40,34 @@ loss = np.array([0.1,0.5,1])
 for i in range(3):
     ycubic = np.array([cubictp_mean[i],cubictp_mean[i+3],cubictp_mean[i+6]])
     yreno = np.array([renotp_mean[i],renotp_mean[i+3],renotp_mean[i+6]])
-    cireno = 0.9*np.std(yreno)/np.mean(yreno)
-    cicubic = 0.9*np.std(ycubic)/np.mean(ycubic)
-    plt.plot(delay,yreno,label="Reno",marker='o')
-    plt.fill_between(delay,yreno-cireno,yreno+cireno,color='blue',alpha=0.1)
-    plt.plot(delay,ycubic,label="Cubic",marker='o')
-    plt.fill_between(delay,ycubic-cicubic,ycubic+cicubic,color='blue',alpha=0.1)
+    reno_std = np.array([renotp_std[i],renotp_std[i+3],renotp_std[i+6]])
+    cubic_std = np.array([cubictp_std[i],cubictp_std[i+3],cubictp_std[i+6]])
+    # cireno = 0.9*np.std(yreno)/np.mean(yreno)
+    # cicubic = 0.9*np.std(ycubic)/np.mean(ycubic)
+    plt.errorbar(delay, yreno, yerr = 1.645*reno_std, label="Reno", marker='.', alpha = 0.5)
+    # plt.fill_between(delay,yreno-cireno,yreno+cireno,color='blue',alpha=0.1)
+    plt.errorbar(delay,ycubic, yerr = 1.645*cubic_std, label="Cubic", marker='.',  alpha = 0.5)
+    # plt.fill_between(delay,ycubic-cicubic,ycubic+cicubic,color='blue',alpha=0.1)
     plt.title('Mean throughput vs Delay for Loss=%s'%loss[i])
-    plt.xlabel('delay')
-    plt.ylabel('throughput')
+    plt.xlabel('Delay')
+    plt.ylabel('Throughput')
     plt.legend()
-    plt.savefig('Plot-%s.png'%(i+1))
+    plt.savefig('Figures/Plot-%s.png'%(i+1))
     plt.figure()
 for i in range(3):
     ycubic = np.array([cubictp_mean[3*i],cubictp_mean[3*i+1],cubictp_mean[3*i+2]])
     yreno = np.array([renotp_mean[3*i],renotp_mean[3*i+1],renotp_mean[3*i+2]])
-    cireno = 0.9*np.std(yreno)/np.mean(yreno)
-    cicubic = 0.9*np.std(ycubic)/np.mean(ycubic)
-    plt.plot(loss,yreno,label="Reno",marker='o')
-    plt.fill_between(loss,yreno-cireno,yreno+cireno,color='blue',alpha=0.1)
-    plt.plot(loss,ycubic,label="Cubic",marker='o')
-    plt.fill_between(loss,ycubic-cicubic,ycubic+cicubic,color='blue',alpha=0.1)
+    reno_std = np.array([renotp_std[3*i],renotp_std[3*i+1],renotp_std[3*i+2]])
+    cubic_std = np.array([cubictp_std[3*i],cubictp_std[3*i+1],cubictp_std[3*i+2]])
+    # cireno = 0.9*np.std(yreno)/np.mean(yreno)
+    # cicubic = 0.9*np.std(ycubic)/np.mean(ycubic)
+    plt.errorbar(loss,yreno, yerr = 1.645*reno_std,label="Reno",marker='.', alpha = 0.5)
+    # plt.fill_between(loss,yreno-cireno,yreno+cireno,color='blue',alpha=0.1)
+    plt.errorbar(loss,ycubic, yerr = 1.645*cubic_std,label="Cubic",marker='.', alpha = 0.5)
+    # plt.fill_between(loss,ycubic-cicubic,ycubic+cicubic,color='blue',alpha=0.1)
     plt.title('Mean throughput vs Loss for Delay=%sms'%delay[i])
-    plt.xlabel('loss')
-    plt.ylabel('throughput')
+    plt.xlabel('Loss')
+    plt.ylabel('Throughput')
     plt.legend()
-    plt.savefig('Plot-%s.png'%(i+4))
+    plt.savefig('Figures/Plot-%s.png'%(i+4))
     plt.figure()
