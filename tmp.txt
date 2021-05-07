@@ -1,0 +1,1515 @@
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399154 116259 1620399154 262275 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399155 180036 1620399155 325285 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399155 765122 1620399155 907000 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399156 438337 1620399156 580499 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399156 940307 1620399157 85350 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399158 451020 1620399158 596238 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399159 67141 1620399159 211713 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399159 686502 1620399159 850990 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399160 270975 1620399160 434786 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399160 815867 1620399160 961008 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399161 347953 1620399161 511743 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399162 258664 1620399162 403874 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399162 788917 1620399162 952555 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399163 393843 1620399163 538759 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399164 48113 1620399164 194119 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399164 658552 1620399164 803578 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399165 314101 1620399165 478028 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399165 934988 1620399166 99060 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399167 100862 1620399167 265094 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399168 498021 1620399168 643225 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399170 48654 1620399171 270723 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399171 832714 1620399171 996775 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399172 414052 1620399172 577668 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399174 195170 1620399174 340576 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399176 822422 1620399176 968033 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399177 371841 1620399177 535806 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399177 925205 1620399178 108690 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399180 885854 1620399181 456219 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399181 963025 1620399182 188181 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399183 45965 1620399183 229362 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399183 603084 1620399186 581104 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399187 444034 1620399187 608394 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399188 8098 1620399188 154001 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399188 560419 1620399188 724419 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399189 155626 1620399189 340281 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399189 780860 1620399192 873493 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399193 704116 1620399193 849826 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399194 293823 1620399194 478373 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399198 782779 1620399198 927764 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399200 447007 1620399200 590874 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399203 967063 1620399208 435077 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399210 703708 1620399212 450767 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399218 319080 1620399218 482569 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399223 881256 1620399224 24423 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399228 331786 1620399228 493892 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399233 925839 1620399234 67720 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399234 412178 1620399238 913136 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399241 703310 1620399246 51785 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399246 857171 1620399247 694386 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399250 209678 1620399250 373881 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399254 479567 1620399254 664105 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399255 256708 1620399255 420551 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399258 554629 1620399263 36551 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399264 95117 1620399268 431250 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399273 179471 1620399274 198346 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399280 794375 1620399280 940238 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399283 27289 1620399286 104426 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399289 109293 1620399292 449354 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399297 376582 1620399301 81058 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399305 45189 1620399308 529518 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399309 260767 1620399310 64162 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399311 583192 1620399312 289938 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399314 83311 1620399314 988789 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399317 524804 1620399318 230224 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399324 245333 1620399325 651893 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399328 174031 1620399329 78779 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399330 427192 1620399331 133149 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399333 572379 1620399334 278405 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399335 789280 1620399336 732155 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399338 363086 1620399339 166684 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399340 700452 1620399341 406501 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399343 119576 1620399343 925212 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399346 860017 1620399347 566326 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399349 68427 1620399349 774282 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399352 678961 1620399353 483563 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399355 400852 1620399356 103568 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399358 256596 1620399358 961939 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399360 496078 1620399361 300834 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399362 917208 1620399363 622722 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399365 143375 1620399365 849006 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399367 562050 1620399379 107414 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399383 240782 1620399392 618993 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399403 972309 1620399411 801312 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399421 967932 1620399432 303699 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399440 59236 1620399454 734450 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399457 84852 1620399458 89115 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399460 286375 1620399468 802416 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399477 559550 1620399478 363769 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399481 429076 1620399486 791891 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399498 745269 1620399499 451854 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399515 76560 1620399516 82431 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399519 417349 1620399520 121020 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399521 688824 1620399522 493624 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399524 434896 1620399527 747128 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399537 969276 1620399538 873751 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399540 460345 1620399541 465747 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399551 900565 1620399553 41462 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399557 652782 1620399558 655969 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399560 71758 1620399560 975412 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399562 790466 1620399575 103003 5000000
+File data sent successfully.
+Closing the connection.
+
+
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@5000000
+Data written in the file successfully.
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620399587 809488 1620399596 976127 5000000
+File data sent successfully.
+Closing the connection.
+
+

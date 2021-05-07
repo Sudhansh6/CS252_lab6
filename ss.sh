@@ -2,7 +2,7 @@
 make client
 make server
 > results.txt
-mkdir Figures
+mkdir -p Figures
 
 ifconfig lo mtu 1500
 # delays 10 50 100
@@ -22,7 +22,7 @@ function find_port() {
 		fi
 	done
 }
-
+> tmp.txt
 for i in {0..2}; do
 	for j in {0..2}; do
 		echo "delay ${delays[i]} loss ${losses[j]}" >> results.txt;
@@ -30,26 +30,35 @@ for i in {0..2}; do
 		
 		data_reno=()  
 		data_cubic=()
-		for k in {0..19}; do 
-			find_port;
-			port1=$port;
-			./server reno ${port1} > temp.txt &
-			./client localhost reno ${port1} > temp2.txt ;
-			wait
+		for k in {0..19}; do
+			> recv.txt;
+			while ! cmp -s send.txt recv.txt; do
+				find_port;
+				port1=$port;
+				./server reno ${port1} > temp.txt &
+				./client localhost reno ${port1} > temp2.txt ;
+				wait
+				cat temp.txt temp2.txt >> tmp.txt;
+				echo $'\n' >> tmp.txt;
+			done
 
-			var=`awk ' NR==FNR{if(FNR==5){var1=$2;var2=$3} next}{if(FNR==5){var3=$2;var4=$3;print 5/((var1-var3)*(1000)+(var2-var4)*(0.001))}}' temp.txt temp2.txt`
+			var=`awk '/#/ { printf ( "%.6f\n", ($6*8)/ ( ($4 - $2) + ($5 - $3)*0.000001 ) ); }' temp2.txt`;
+			echo $var;
 			data_reno+="$var ";
 
 			rm temp.txt;
 			rm temp2.txt;
 
-			find_port;
-			port2=$port;
-			./server cubic ${port2} > temp.txt &
-			./client localhost cubic ${port2} > temp2.txt;
-			wait
+			> recv.txt;
+			while ! cmp -s send.txt recv.txt; do
+				find_port;
+				port2=$port;
+				./server cubic ${port2} > temp.txt &
+				./client localhost cubic ${port2} > temp2.txt;
+				wait
+			done
 
-			var=`awk ' NR==FNR{if(FNR==5){var1=$2;var2=$3} next}{if(FNR==5){var3=$2;var4=$3;print 5/((var1-var3)*(1000)+(var2-var4)*(0.001))}}' temp.txt temp2.txt`
+			var=`awk '/#/ { printf ( "%.6f\n", ($6*8)/ ( ($4 - $2) + ($5 - $3)*0.000001 ) ); }' temp2.txt`;
 			data_cubic+="$var ";
 
 			rm temp.txt;

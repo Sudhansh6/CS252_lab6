@@ -3,34 +3,20 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <netinet/tcp.h>
+#include <fcntl.h>
 #include <netdb.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 #include <time.h>
 
-#define SIZE 512 // each char takes 4 bytes, we need 5000000 bytes -> 1250000 chars
+#define SIZE 8192 // each char takes 4 bytes, we need 5000000 bytes -> 1250000 chars
 // The code from the reference links mentioned in the document is used as a template.
 // This sends the textfile
 // Usage: ./client localhost cubic or ./client 127.0.0.1 reno
-void send_file(FILE *fp, int s){
-  int n;
-  char data[SIZE] = {0};
-  struct timeval start;
-  gettimeofday(&start, NULL);
-  while(fgets(data, SIZE, fp) != NULL) {
-    if (send(s, data, sizeof(data), 0) == -1) {
-      perror("Error in sending file.");
-      exit(1);
-    }
-    bzero(data, SIZE);
-  }
-  printf("# %ld %ld\n", start.tv_sec, start.tv_usec);
-} 
 
 int main(int argc, char * argv[])
 {
-  FILE *fp;
-  char *filename = "input.txt";
   struct hostent *hp;
   struct sockaddr_in sin;
   char *host, *TCP_variant;
@@ -96,13 +82,38 @@ int main(int argc, char * argv[])
   else
     printf("Connection successful.\n");
 
-  fp = fopen(filename, "r");
-  if (fp == NULL) {
-    perror("Error in reading file.");
-    exit(1);
-  }
+  int read_return = 0, size = 0;
+  int filefd = open("send.txt", O_RDONLY);
+  // FILE* filefd = fopen("send.txt", "r");
+  char buffer[SIZE];
+  struct timeval start, stop;
+  gettimeofday(&start, NULL);
+  while (1) {
 
-  send_file(fp, s);
+    read_return = read(filefd, buffer, SIZE);
+    if (read_return == 0)
+        break;
+    if (read_return == -1) {
+        perror("read");
+        exit(EXIT_FAILURE);
+    }
+    if (write(s, buffer, read_return) == -1) {
+        perror("write");
+        exit(EXIT_FAILURE);
+    }
+    size+= read_return;
+  }
+  // while(read_return = fread(buffer, SIZE, 1, filefd) != NULL) {
+  //   if (send(s, buffer, SIZE, 0) == -1) {
+  //     perror("Error in sending file.");
+  //     exit(1);
+  //   }
+  //   size += SIZE;
+  //   bzero(buffer, SIZE);
+  // }
+  gettimeofday(&stop, NULL);
+
+  printf("# %ld %ld %ld %ld %i\n", start.tv_sec, start.tv_usec, stop.tv_sec, stop.tv_usec, size);
   printf("File data sent successfully.\n");
 
   printf("Closing the connection.\n");

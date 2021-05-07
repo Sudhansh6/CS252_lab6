@@ -6,33 +6,12 @@
 #include <netdb.h>
 #include <string.h>
 #include <stdlib.h>
+#include <fcntl.h>
 
-#define SIZE         512
+#define SIZE 8192
 // The code from the reference links mentioned in the document is used as a template.
 // This receives the textfile
 // Usage: ./server reno
-void write_file(int s)
-{
-  int n;
-  FILE *fp;
-  char *filename = "output.txt";
-  char buffer[SIZE];
-
-  fp = fopen(filename, "w");
-  while (1) {
-    n = recv(s, buffer, SIZE, 0);
-    if (n <= 0){
-      break;
-      return;
-    }
-    fprintf(fp, "%s", buffer);
-    bzero(buffer, SIZE);
-  }
-  struct timeval start;
-  gettimeofday(&start, NULL);
-  printf("# %ld %ld\n", start.tv_sec, start.tv_usec);
-  return;
-}
 
 int main(int argc, char * argv[])
 {
@@ -96,8 +75,37 @@ int main(int argc, char * argv[])
 
   socklen_t addr_size = sizeof(new_addr);
   new_s = accept(s, (struct sockaddr*)&new_addr, &addr_size);
-  write_file(new_s);
+  int read_return = 0, size = 0;
+  char buffer[SIZE];
+  int filefd = open("recv.txt",
+                O_WRONLY | O_CREAT | O_TRUNC,
+                S_IRUSR | S_IWUSR);
+  // FILE* filefd = fopen("recv.txt", "w");
+  if (filefd == -1) {
+      perror("open");
+      exit(EXIT_FAILURE);
+  }
+  bzero(buffer, SIZE);
+  do {
+      read_return = read(new_s, buffer, SIZE);
+      if (read_return == -1) {
+          perror("read");
+          exit(EXIT_FAILURE);
+      }
+      if (read_return == 0) break;
+      if (write(filefd, buffer, read_return) == -1) {
+          perror("write");
+          exit(EXIT_FAILURE);
+      }
+      bzero(buffer, SIZE);
+      size+= read_return;
+  } while (read_return > 0);
+  
+  printf("@%i\n", size);
   printf("Data written in the file successfully.\n");
 
+  close(filefd);
+  close(new_s);
+  close(s);
   return 0;
 }
