@@ -24,7 +24,7 @@ for i in {0..2}; do
 			./client localhost reno ${port1} > temp2.txt;
 			wait
 
-			var=`awk ' NR==FNR{if(FNR==5){var1=$2;var2=$3} next}{if(FNR==5){var3=$2;var4=$3;print (var1-var3)*(1000000)+(var2-var4)}}' temp.txt temp2.txt`
+			var=`awk ' NR==FNR{if(FNR==5){var1=$2;var2=$3} next}{if(FNR==5){var3=$2;var4=$3;print (var1-var3)*(1000)+(var2-var4)*(0.001)}}' temp.txt temp2.txt`
 			data_reno+="$var ";
 
 			port2=$((8000 + 1000*$i + 100*$j + 2*$k));
@@ -33,7 +33,7 @@ for i in {0..2}; do
 			./client localhost cubic ${port2} > temp2.txt;
 			wait
 
-			var=`awk ' NR==FNR{if(FNR==5){var1=$2;var2=$3} next}{if(FNR==5){var3=$2;var4=$3;print (var1-var3)*(1000000)+(var2-var4)}}' temp.txt temp2.txt`
+			var=`awk ' NR==FNR{if(FNR==5){var1=$2;var2=$3} next}{if(FNR==5){var3=$2;var4=$3;print (var1-var3)*(1000)+(var2-var4)*(0.001)}}' temp.txt temp2.txt`
 			data_cubic+="$var ";
 
 		done	
