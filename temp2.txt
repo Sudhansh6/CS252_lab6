@@ -1,0 +1,6 @@
+Socket created.
+Server is using TCP reno.
+Socket bind success.
+Listening....
+@ 4997400
+Data written in the file successfully.

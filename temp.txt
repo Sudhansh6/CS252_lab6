@@ -1,0 +1,7 @@
+Host detected.
+Socket created.
+Client is using TCP reno.
+Connection successful.
+# 1620462646 55126 1620463644 424445 5000000
+File data sent successfully.
+Closing the connection.
