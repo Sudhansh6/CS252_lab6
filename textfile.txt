@@ -1,0 +1,11 @@
+delay 10ms loss 0.1%
+TCP cubic:
+
+TCP reno:
+
+delay 10ms loss 0.5%
+TCP cubic:
+
+TCP reno:
+
+delay 10ms loss 1%

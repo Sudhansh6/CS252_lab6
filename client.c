@@ -118,7 +118,7 @@ int main(int argc, char * argv[])
 
   printf("Closing the connection.\n");
 
-  close(s);
+  // close(s);
   return 0;
 
 }

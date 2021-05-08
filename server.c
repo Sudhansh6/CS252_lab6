@@ -75,6 +75,9 @@ int main(int argc, char * argv[])
 
   socklen_t addr_size = sizeof(new_addr);
   new_s = accept(s, (struct sockaddr*)&new_addr, &addr_size);
+
+  // close(s);
+
   int read_return = 0, size = 0;
   char buffer[SIZE];
   int filefd = open("recv.txt",
@@ -92,7 +95,7 @@ int main(int argc, char * argv[])
           perror("read");
           exit(EXIT_FAILURE);
       }
-      if (read_return == 0) break;
+
       if (write(filefd, buffer, read_return) == -1) {
           perror("write");
           exit(EXIT_FAILURE);
@@ -101,11 +104,11 @@ int main(int argc, char * argv[])
       size+= read_return;
   } while (read_return > 0);
   
-  printf("@%i\n", size);
+  printf("@ %i\n", size);
   printf("Data written in the file successfully.\n");
 
-  close(filefd);
-  close(new_s);
-  close(s);
+  // close(filefd);
+  // close(new_s);
+  
   return 0;
 }

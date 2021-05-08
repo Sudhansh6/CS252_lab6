@@ -1,0 +1,6 @@
+Socket created.
+Server is using TCP cubic.
+Socket bind success.
+Listening....
+@ 4547672
+Data written in the file successfully.
