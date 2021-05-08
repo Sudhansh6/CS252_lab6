@@ -75,7 +75,7 @@ for i in {0..2}; do
 
 				# Calculate the throughput
 				var=`awk '/#/ { printf ( "%.6f\n", ($6*8)/ ( ($4 - $2) + ($5 - $3)*0.000001 ) ); }' temp.txt`;
-				data_reno+="$var ";
+				data+="$var ";
 
 				# Delete the temporary files
 				rm temp.txt; rm temp2.txt;
