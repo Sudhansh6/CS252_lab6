@@ -11,7 +11,12 @@ if(len(sys.argv) != 3):
 
 t1 = sys.argv[1]
 t2 = sys.argv[2]
-tcp1 = tcp2 = tcp1tp_mean = tcp1tp_std = tcp2tp_mean = tcp2tp_std = []
+tcp1 = []
+tcp2 = []
+tcp1tp_mean = []
+tcp1tp_std = []
+tcp2tp_mean = []
+tcp2tp_std = []
 f2 = open("results.txt", 'w')
 with open('textfile.txt','r') as f:
 	for line in f:
@@ -67,11 +72,11 @@ for i in range(3):
 	tcp1_std = np.array([tcp1tp_std[i],tcp1tp_std[i+3],tcp1tp_std[i+6]])
 	tcp2_std = np.array([tcp2tp_std[i],tcp2tp_std[i+3],tcp2tp_std[i+6]])
 
-	plt.errorbar(delay, ytcp1, yerr = tcp1_std, label=t1, marker='.', alpha = 0.5)
-	plt.errorbar(delay, ytcp2, yerr = tcp2_std, label=t2, marker='.',  alpha = 0.5)
-	plt.plot(delay, ytcp1, color="red")
+	#plt.errorbar(delay, ytcp1, yerr = tcp1_std, label=t1, marker='.', alpha = 0.5)
+	#plt.errorbar(delay, ytcp2, yerr = tcp2_std, label=t2, marker='.',  alpha = 0.5)
+	plt.plot(delay, ytcp1, color="red",label=t1)
 	plt.fill_between(delay, ytcp1 - tcp1_std, ytcp1 + tcp1_std, color='red', alpha=0.1)
-	plt.plot(delay, ytcp2, color="blue")
+	plt.plot(delay, ytcp2, color="blue", label=t2)
 	plt.fill_between(delay, ytcp2 - tcp2_std, ytcp2 + tcp2_std, color='blue', alpha=0.1)
 	plt.legend()
 	
@@ -89,11 +94,11 @@ for i in range(3):
 	tcp1_std = np.array([tcp1tp_std[3*i],tcp1tp_std[3*i+1],tcp1tp_std[3*i+2]])
 	tcp2_std = np.array([tcp2tp_std[3*i],tcp2tp_std[3*i+1],tcp2tp_std[3*i+2]])
 
-	plt.errorbar(delay, ytcp1, yerr = tcp1_std, label=t1, marker='.', alpha = 0.5)
-	plt.errorbar(delay, ytcp2, yerr = tcp2_std, label=t2, marker='.',  alpha = 0.5)
-	plt.plot(delay, ytcp1, color="red")
+	#plt.errorbar(delay, ytcp1, yerr = tcp1_std, label=t1, marker='.', alpha = 0.5)
+	#plt.errorbar(delay, ytcp2, yerr = tcp2_std, label=t2, marker='.',  alpha = 0.5)
+	plt.plot(delay, ytcp1, color="red", label=t1)
 	plt.fill_between(delay, ytcp1 - tcp1_std, ytcp1 + tcp1_std, color='red', alpha=0.1)
-	plt.plot(delay, ytcp2, color="blue")
+	plt.plot(delay, ytcp2, color="blue", label=t2)
 	plt.fill_between(delay, ytcp2 - tcp2_std, ytcp2 + tcp2_std, color='blue', alpha=0.1)
 	plt.legend()
 	
