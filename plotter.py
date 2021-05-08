@@ -5,10 +5,11 @@ from math import sqrt
 
 
 counter = 0
+#checking for correct usage
 if(len(sys.argv) != 3):
 	print("Usage: python3.8 plotter.py tcp1 tcp2")
 	exit(1)
-
+#initialling values to type of protocol or empty lists
 t1 = sys.argv[1]
 t2 = sys.argv[2]
 tcp1 = []
@@ -21,7 +22,7 @@ f2 = open("results.txt", 'w')
 with open('textfile.txt','r') as f:
 	for line in f:
 		f2.write(line)
-		if counter == 0:
+		if (counter % 5 == 0):
 			f2.write("\n")
 		if(counter%5 == 0):
 			tcp1=[]

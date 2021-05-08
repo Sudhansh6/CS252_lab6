@@ -9,7 +9,7 @@
 #include <fcntl.h>
 
 #define SIZE 8192
-// The code from the reference links mentioned in the document is used as a template.
+// The code from the reference links mentioned in the problem statement were used as a template.
 // This receives the textfile
 // Usage: ./server reno
 
@@ -21,7 +21,7 @@ int main(int argc, char * argv[])
   int s, new_s, len;
   struct sockaddr_in server_addr, new_addr;
   int SERVER_PORT;
-
+  //number of arguments must be 3
   if (argc==3) {
     TCP_variant = argv[1];
     SERVER_PORT = atoi(argv[2]);
@@ -43,7 +43,7 @@ int main(int argc, char * argv[])
   }
   else
     printf("Socket created.\n");
-
+  //TCP Protocol here
   len = strlen(TCP_variant);
   if (setsockopt(s, IPPROTO_TCP, TCP_CONGESTION, TCP_variant, len) != 0)
   {
@@ -57,14 +57,14 @@ int main(int argc, char * argv[])
       return -1;
   }
   printf("Server is using TCP %s.\n", TCP_variant);
-
+  //Checking if the socket has binded successfully
   if ((bind(s, (struct sockaddr *)&server_addr, sizeof(server_addr))) < 0) {
     perror("simplex-talk: bind");
     exit(1);
   }
   else
     printf("Socket bind success.\n");
-  
+  //Listening to the server
   if(listen(s, 10) == 0)
     printf("Listening....\n");
   else
@@ -76,14 +76,12 @@ int main(int argc, char * argv[])
   socklen_t addr_size = sizeof(new_addr);
   new_s = accept(s, (struct sockaddr*)&new_addr, &addr_size);
 
-  // close(s);
-
+  //writing content into recv.txt
   int read_return = 0, size = 0;
   char buffer[SIZE];
   int filefd = open("recv.txt",
                 O_WRONLY | O_CREAT | O_TRUNC,
                 S_IRUSR | S_IWUSR);
-  // FILE* filefd = fopen("recv.txt", "w");
   if (filefd == -1) {
       perror("open");
       exit(EXIT_FAILURE);
@@ -106,9 +104,6 @@ int main(int argc, char * argv[])
   
   printf("@ %i\n", size);
   printf("Data written in the file successfully.\n");
-
-  // close(filefd);
-  // close(new_s);
   
   return 0;
 }

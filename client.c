@@ -11,7 +11,7 @@
 #include <time.h>
 
 #define SIZE 8192
-// The code from the reference links mentioned in the document is used as a template.
+// The code from the reference links mentioned in the problem statement were used as a template.
 // This sends the textfile
 // Usage: ./client localhost cubic or ./client 127.0.0.1 reno
 
@@ -23,7 +23,7 @@ int main(int argc, char * argv[])
   int SERVER_PORT;
   int s;
   int len;
-
+  // arguments must be 4 
   if (argc==4) {
     host = argv[1];
     TCP_variant = argv[2];
@@ -72,7 +72,7 @@ int main(int argc, char * argv[])
       exit(1);
   }
   printf("Client is using TCP %s.\n", TCP_variant);
-
+  // Checking if the connection is successful
   if (connect(s, (struct sockaddr *)&sin, sizeof(sin)) < 0)
   {
     perror("simplex-talk: connect");
@@ -81,10 +81,9 @@ int main(int argc, char * argv[])
   }
   else
     printf("Connection successful.\n");
-
+  //reading content from send.txt into buffer
   int read_return = 0, size = 0;
   int filefd = open("send.txt", O_RDONLY);
-  // FILE* filefd = fopen("send.txt", "r");
   char buffer[SIZE];
   struct timeval start, stop;
   gettimeofday(&start, NULL);
@@ -103,22 +102,12 @@ int main(int argc, char * argv[])
     }
     size+= read_return;
   }
-  // while(read_return = fread(buffer, SIZE, 1, filefd) != NULL) {
-  //   if (send(s, buffer, SIZE, 0) == -1) {
-  //     perror("Error in sending file.");
-  //     exit(1);
-  //   }
-  //   size += SIZE;
-  //   bzero(buffer, SIZE);
-  // }
   gettimeofday(&stop, NULL);
 
   printf("# %ld %ld %ld %ld %i\n", start.tv_sec, start.tv_usec, stop.tv_sec, stop.tv_usec, size);
   printf("File data sent successfully.\n");
 
   printf("Closing the connection.\n");
-
-  // close(s);
   return 0;
 
 }
