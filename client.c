@@ -10,8 +10,8 @@
 #include <unistd.h>
 #include <time.h>
 
-#define SIZE 8192
-// The code from the reference links mentioned in the problem statement were used as a template.
+#define SIZE 1024
+// The code from the reference links mentioned in the document is used as a template.
 // This sends the textfile
 // Usage: ./client localhost cubic or ./client 127.0.0.1 reno
 
@@ -23,13 +23,13 @@ int main(int argc, char * argv[])
   int SERVER_PORT;
   int s;
   int len;
-  // arguments must be 4 
+
   if (argc==4) {
     host = argv[1];
     TCP_variant = argv[2];
     SERVER_PORT = atoi(argv[3]);
   }
-
+ 
   else {
     fprintf(stderr, "usage: simplex-talk host TCP_variant PORT\n");
     exit(1);
@@ -65,6 +65,8 @@ int main(int argc, char * argv[])
       perror("setsockopt");
       exit(1);
   }
+
+  // verifying the TCP protocol
   len = sizeof(TCP_variant);
   if (getsockopt(s, IPPROTO_TCP, TCP_CONGESTION, TCP_variant, &len) != 0)
   {
@@ -72,7 +74,9 @@ int main(int argc, char * argv[])
       exit(1);
   }
   printf("Client is using TCP %s.\n", TCP_variant);
-  // Checking if the connection is successful
+
+  // check for proper connection
+  
   if (connect(s, (struct sockaddr *)&sin, sizeof(sin)) < 0)
   {
     perror("simplex-talk: connect");
@@ -81,33 +85,47 @@ int main(int argc, char * argv[])
   }
   else
     printf("Connection successful.\n");
-  //reading content from send.txt into buffer
+
   int read_return = 0, size = 0;
+
+
   int filefd = open("send.txt", O_RDONLY);
   char buffer[SIZE];
   struct timeval start, stop;
   gettimeofday(&start, NULL);
+
+  // pass send.txt until completely read
   while (1) {
 
     read_return = read(filefd, buffer, SIZE);
     if (read_return == 0)
         break;
+
+    // check if the file is corrupt and exit if not
     if (read_return == -1) {
         perror("read");
         exit(EXIT_FAILURE);
     }
+
+    // write to buffer
+
     if (write(s, buffer, read_return) == -1) {
         perror("write");
         exit(EXIT_FAILURE);
     }
     size+= read_return;
   }
+
   gettimeofday(&stop, NULL);
+
+ // write the start time and end time of the connections to get the time of transmission
 
   printf("# %ld %ld %ld %ld %i\n", start.tv_sec, start.tv_usec, stop.tv_sec, stop.tv_usec, size);
   printf("File data sent successfully.\n");
 
   printf("Closing the connection.\n");
+
+  close(s);
   return 0;
 
 }
