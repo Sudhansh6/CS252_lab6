@@ -1,6 +1,7 @@
 from matplotlib import pyplot as plt
 import numpy as np
 import sys
+import math
 
 counter = 0
 if(len(sys.argv) != 3):
@@ -75,9 +76,9 @@ for i in range(3):
     tcp2_std = np.array([tcp2tp_std[3*i],tcp2tp_std[3*i+1],tcp2tp_std[3*i+2]])
     # citcp1 = 0.9*np.std(ytcp1)/np.mean(ytcp1)
     # citcp2 = 0.9*np.std(ytcp2)/np.mean(ytcp2)
-    plt.errorbar(loss,ytcp1, yerr = 1.645*tcp1_std,label=t1,marker='.', alpha = 0.5)
+    plt.errorbar(loss,ytcp1, yerr = 1.645*tcp1_std/math.sqrt(20),label=t1,marker='.', alpha = 0.5)
     # plt.fill_between(loss,ytcp1-citcp1,ytcp1+citcp1,color='blue',alpha=0.1)
-    plt.errorbar(loss,ytcp2, yerr = 1.645*tcp2_std,label=t2,marker='.', alpha = 0.5)
+    plt.errorbar(loss,ytcp2, yerr = 1.645*tcp2_std/math.sqrt(20),label=t2,marker='.', alpha = 0.5)
     # plt.fill_between(loss,ytcp2-citcp2,ytcp2+citcp2,color='blue',alpha=0.1)
     plt.title('Mean throughput vs Loss for Delay=%sms'%delay[i])
     plt.xlabel('Loss')
