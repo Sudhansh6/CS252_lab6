@@ -3,6 +3,7 @@ import numpy as np
 import sys
 from math import sqrt
 
+
 counter = 0
 if(len(sys.argv) != 3):
 	print("Usage: python3.8 plotter.py tcp1 tcp2")
